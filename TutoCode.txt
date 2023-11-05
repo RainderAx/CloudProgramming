@@ -1,0 +1,73 @@
+Pour manipuler des données provenant d'une API de data.gouv avec MongoDB en utilisant C#, vous devrez suivre plusieurs étapes :
+
+Choix de la base de données MongoDB : Assurez-vous d'avoir MongoDB installé et configuré sur votre système. Vous pouvez télécharger MongoDB à partir du site officiel (https://www.mongodb.com/try/download/community).
+
+Configuration de votre projet C# :
+
+Créez un nouveau projet C# dans un environnement de développement comme Visual Studio ou Visual Studio Code.
+Installez les packages MongoDB C# officiels via NuGet Package Manager. Vous pouvez utiliser la console NuGet Package Manager ou le fichier .csproj pour ajouter les références nécessaires. Les packages les plus importants sont "MongoDB.Driver" et "MongoDB.Bson".
+Récupération des données de l'API de data.gouv :
+
+Utilisez HttpClient pour interroger l'API de data.gouv et récupérer les données. Voici un exemple de base pour effectuer une demande HTTP et obtenir une réponse JSON :
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+class Program
+{
+    static async Task Main(string[] args)
+    {
+        using (var httpClient = new HttpClient())
+        {
+            string apiUrl = "URL_DE_L'API_DATA_GOUV";
+            HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
+
+            if (response.IsSuccessStatusCode)
+            {
+                string json = await response.Content.ReadAsStringAsync();
+                // Traitez le JSON pour extraire les données.
+            }
+            else
+            {
+                Console.WriteLine("Erreur lors de la récupération des données.");
+            }
+        }
+    }
+}
+Stockage des données dans MongoDB :
+
+Créez une classe qui correspondra à la structure des données que vous récupérez de l'API de data.gouv. Cette classe devrait être mappée sur un document MongoDB.
+Utilisez le package MongoDB.Driver pour établir une connexion à votre base de données MongoDB et insérer les données. Voici un exemple :
+using MongoDB.Bson;
+using MongoDB.Driver;
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static async Task Main(string[] args)
+    {
+        string connectionString = "VOTRE_CHAINE_DE_CONNEXION_MONGODB";
+        MongoClient client = new MongoClient(connectionString);
+        IMongoDatabase database = client.GetDatabase("NOM_DE_VOTRE_BASE_DE_DONNEES");
+
+        string apiUrl = "URL_DE_L'API_DATA_GOUV";
+        HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
+
+        if (response.IsSuccessStatusCode)
+        {
+            string json = await response.Content.ReadAsStringAsync();
+            List<VotreClasseDeDonnees> donnees = JsonConvert.DeserializeObject<List<VotreClasseDeDonnees>>(json);
+
+            IMongoCollection<VotreClasseDeDonnees> collection = database.GetCollection<VotreClasseDeDonnees>("NomDeVotreCollection");
+            await collection.InsertManyAsync(donnees);
+        }
+        else
+        {
+            Console.WriteLine("Erreur lors de la récupération des données.");
+        }
+    }
+}
+Assurez-vous de personnaliser le code en remplaçant les valeurs comme "URL_DE_L'API_DATA_GOUV", "VOTRE_CHAINE_DE_CONNEXION_MONGODB", "NOM_DE_VOTRE_BASE_DE_DONNEES", "VotreClasseDeDonnees", et "NomDeVotreCollection" par les valeurs spécifiques à votre cas.
+
+N'oubliez pas de gérer les erreurs, de mettre en place des mécanismes de sécurité appropriés et de planifier des mises à jour régulières de vos données en provenance de l'API de data.gouv.
