@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FNTxetDdpz7fwrFHYR70m1xE4/+cgU9/M+gJg7wuF1ZMqUB0pzu1VfZ1dSdNeUD1+Vizr5p1vSdKvaYTwIRMuQ==",
+  "dgSpecHash": "dHIM0CjejD7PnUmqod0Xxtb4TpZmsNmOUsaSxe7O71B+cSL7/Hn7AE9XOyLfhRpPLLezp7Gpe71IXCPLopBSCQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dell\\Desktop\\Bin3\\cloud\\MongoDBtest\\MongoDBtest\\MongoDBtest.csproj",
+  "projectFilePath": "C:\\Users\\Dell\\Desktop\\Bin3\\cloud\\TP1\\CloudProgramming\\MongoDBtest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

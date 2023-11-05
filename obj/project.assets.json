@@ -790,11 +790,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dell\\Desktop\\Bin3\\cloud\\MongoDBtest\\MongoDBtest\\MongoDBtest.csproj",
+      "projectUniqueName": "C:\\Users\\Dell\\Desktop\\Bin3\\cloud\\TP1\\CloudProgramming\\MongoDBtest.csproj",
       "projectName": "MongoDBtest",
-      "projectPath": "C:\\Users\\Dell\\Desktop\\Bin3\\cloud\\MongoDBtest\\MongoDBtest\\MongoDBtest.csproj",
+      "projectPath": "C:\\Users\\Dell\\Desktop\\Bin3\\cloud\\TP1\\CloudProgramming\\MongoDBtest.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dell\\Desktop\\Bin3\\cloud\\MongoDBtest\\MongoDBtest\\obj\\",
+      "outputPath": "C:\\Users\\Dell\\Desktop\\Bin3\\cloud\\TP1\\CloudProgramming\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
