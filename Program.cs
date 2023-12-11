@@ -12,5 +12,9 @@ class Program
         //await Data.AddData();
         //await Index.CreateIndexes();
         //await Index.QueryData();
+        await Hachage.CreateHashTableFromMongoDB();
+
+        //Console.WriteLine("Enter the index you want to search for: ");
+        //globalIndex = Console.ReadLine();
     }
 }
