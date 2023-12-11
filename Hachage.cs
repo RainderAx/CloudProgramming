@@ -27,14 +27,6 @@ public class Hachage
             i++;
         }
 
-        int j = 1;
-        foreach (var document in documents)
-        {
-            var jour = document["jour"] != BsonNull.Value ? document["jour"].ToUniversalTime().ToString("dd/MM/yyyy") : "";
-            ht.Add("jour_" + j.ToString("000"), jour);
-            j++;
-        }
-
         return ht;
     }
 }
