@@ -1,14 +1,16 @@
-﻿using System.Globalization;
-using System.IO;
+﻿using System.Collections;
+using System;
 using System.Threading.Tasks;
-using CsvHelper;
-using MongoDB.Bson;
-using MongoDB.Driver;
+
 class Program
 {
+    // Global index
+    static string globalIndex = "";
+
     static async Task Main(string[] args)
     {
-        await Data.AddData();
-        await Index.CreateIndexes();
+        //await Data.AddData();
+        //await Index.CreateIndexes();
+        //await Index.QueryData();
     }
 }

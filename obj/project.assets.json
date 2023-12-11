@@ -784,23 +784,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dell\\.nuget\\packages\\": {},
+    "C:\\Users\\chape\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dell\\Desktop\\Bin3\\cloud\\MongoDBtest\\MongoDBtest\\MongoDBtest.csproj",
+      "projectUniqueName": "C:\\Users\\chape\\OneDrive - De Vinci\\benoit esilv\\Cloud Programming\\CloudProgrammingTP\\CloudProgramming\\MongoDBtest.csproj",
       "projectName": "MongoDBtest",
-      "projectPath": "C:\\Users\\Dell\\Desktop\\Bin3\\cloud\\MongoDBtest\\MongoDBtest\\MongoDBtest.csproj",
-      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dell\\Desktop\\Bin3\\cloud\\MongoDBtest\\MongoDBtest\\obj\\",
+      "projectPath": "C:\\Users\\chape\\OneDrive - De Vinci\\benoit esilv\\Cloud Programming\\CloudProgrammingTP\\CloudProgramming\\MongoDBtest.csproj",
+      "packagesPath": "C:\\Users\\chape\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chape\\OneDrive - De Vinci\\benoit esilv\\Cloud Programming\\CloudProgrammingTP\\CloudProgramming\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\chape\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
